@@ -8,7 +8,7 @@ console.log(randomNumber)
 
 form?.addEventListener("submit", (e) => {
   e.preventDefault() 
-
+  
   let inputNumber:number = 0;
 
   if(input) {
@@ -19,7 +19,6 @@ while(randomNumber !== inputNumber){
   if(randomNumber > inputNumber){
     alert("För litet.")
     break;
-   
   } else if(randomNumber < inputNumber){
     alert("För stort.")
     break;
@@ -28,5 +27,9 @@ while(randomNumber !== inputNumber){
 
 if(randomNumber === inputNumber){
   alert("Du vann.")
+}
+
+if(input){
+(input as HTMLInputElement).value = "";
 }
 })
