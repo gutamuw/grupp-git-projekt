@@ -18,9 +18,11 @@ form?.addEventListener("submit", (e) => {
 while(randomNumber !== inputNumber){
   if(randomNumber > inputNumber){
     alert("För litet.")
+    break;
    
   } else if(randomNumber < inputNumber){
     alert("För stort.")
+    break;
   }
 }
 
