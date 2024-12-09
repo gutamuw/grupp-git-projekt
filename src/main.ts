@@ -18,5 +18,4 @@ form?.addEventListener("submit", (e) => {
     alert("Det var ett stort tal!")
   }
   
-console.log("Tjoho!")
 })
